@@ -1,0 +1,61 @@
+/* audition.css
+ *
+ * Author: Jackson Byrd
+ * Date: November 18, 2026
+ * Purpose: Audition and Membership page for the Swashbucklers website
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: navy;
+    color: gold;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#audition {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+#audition h2,
+#audition h3 {
+    color: navy;
+}
+
+#audition p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    background-color: navy;
+    color: gold;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.button:hover {
+    transition: .75s;
+    background-color: gold;
+    color: navy;
+}
