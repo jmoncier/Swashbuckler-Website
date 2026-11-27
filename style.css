@@ -1,0 +1,151 @@
+
+/* General Styling */
+html { scroll-behavior: smooth; scroll-padding-top: 190px; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1C2854; background: white; }
+
+/* Navigation Bar */
+header {
+    background: #5068B0;
+    position: fixed;
+    inset: 0 0 auto;
+    height: 175px;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    
+}
+nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 170px minmax(0, 1fr);
+    align-items: center;
+    gap: 20px;
+    max-width: 1800px;
+    height: 100%;
+    margin: auto;
+}
+.nav-left, .nav-right { display: flex; align-items: center; justify-content: space-evenly; gap: 15px; min-width: 0; }
+nav a { color: white; text-decoration: none; font-size: 23px; font-weight: bold; white-space: nowrap; }
+nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { text-decoration: underline; }
+
+/* Center Logo */
+.nav-logo { display: flex; justify-content: center; align-items: center; }
+.nav-logo img { width: 150px; height: 150px; object-fit: contain; }
+
+/* Homepage */
+main { padding-top: 175px; }
+.hero { position: relative; background: #1C2854; }
+.group-photo, .banner img { display: block; width: 100%; height: auto; }
+.banner {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    max-width: 850px;
+    margin: 0;
+}
+.banner img { border-radius: 6px; box-shadow: 0 5px 20px rgba(0,0,0,.35); }
+
+/* Page Sections */
+section { padding: 80px 30px; text-align: center; }
+section h2 { color: #5068B0; font-size: 34px; margin: 0 0 25px; }
+section p { font-size: 18px; line-height: 1.6; max-width: 1000px; margin: 20px auto; }
+.light-section { background: #F2F2F2; }
+
+/* YouTube Video */
+.video-container { max-width: 800px; aspect-ratio: 16 / 9; margin: 35px auto; overflow: hidden; border-radius: 8px; box-shadow: 0 5px 18px rgba(0,0,0,.18); }
+.video-container iframe { display: block; width: 100%; height: 100%; border: none; }
+
+/* Social Media */
+.social-links, .footer-social { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; margin-top: 20px; }
+.social-links a, .social-button { display: inline-block; background: #5068B0; color: white; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-size: 17px; font-weight: bold; transition: background-color .2s, color .2s; }
+.social-links a:hover, .social-links a:focus-visible, .social-button:hover, .social-button:focus-visible { background: #FFC72C; color: #1C2854; }
+
+/* Footer */
+footer { background: #5068B0; color: white; text-align: center; padding: 30px; }
+footer p { margin: 5px; }
+.footer-social a { color: white; text-decoration: none; font-size: 16px; }
+.footer-social a:hover, .footer-social a:focus-visible { text-decoration: underline; }
+
+/* Tablet Screens */
+@media (max-width: 1450px) {
+    header { position: sticky; height: auto; padding: 12px 15px; }
+    nav { grid-template-columns: 1fr; justify-items: center; gap: 12px; }
+    nav a { font-size: 19px; }
+    .nav-logo { grid-row: 1; }
+    .nav-logo img { width: 105px; height: 105px; }
+    .nav-left, .nav-right { justify-content: center; flex-wrap: wrap; gap: 20px; }
+    main { padding-top: 0; }
+    html { scroll-padding-top: 220px; }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+    nav a { font-size: 15px; }
+    .banner { width: 55%; }
+    section { padding: 60px 20px; }
+    section h2 { font-size: 28px; }
+    section p { font-size: 16px; }
+    .social-links { gap: 12px; }
+    .social-links a, .social-button { font-size: 15px; padding: 12px 20px; }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .social-links a, .social-button { transition: none; }
+}
+
+
+/*music.css*/
+
+article#music-left{
+    text-align: left;
+    padding: 10px;
+    float: left;
+    width: 35%;
+    padding-left: 20px;
+}
+
+article#music-right{
+    padding: 10px;
+    float: right;
+    width: 55%;
+}
+#music-right a {
+    text-decoration: none;
+    color: #5068B0;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ul#music-list {
+    list-style: none;
+}
+
+ul#music-list li {
+    margin-top: 12px;
+}
+
+ul#music-list a {
+    text-decoration: none;
+    color: #5068B0;
+}
+ul#music-list a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+#music-container {
+    width: 70%;
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 50px;
+    
+}
+iframe {
+    width: 640px;
+    height: 360px;
+}
